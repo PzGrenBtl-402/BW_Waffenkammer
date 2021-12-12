@@ -1,32 +1,23 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Man;
-    class CAManBase: Man
-    {
-        class ACE_SelfActions
-        {
-            class ACE_Equipment
-            {
-                class PBW_Waffenkammer_BaseAction
-                {
-                    displayName = "$STR_PBW_Action_WaKaBase";
-                    condition = "true";
-                    statement = "";
-                    icon = "\pbw_main\WaKa.paa";
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class ACE_Equipment {
+                class PBW_Handgrenades {
+                    displayName = "$STR_PBW_Action_Frag";
+                    icon = "\pbw_handgrenades\ui\pbw_dm51a1_grenade.paa";
 
-                    class PBW_Action_RemoveFrag
-                    {
+                    class PBW_RemoveFrag {
                         displayName = "$STR_PBW_Action_RemoveFrag";
                         condition = "('PBW_DM51A1_Frag' in ([_player, false, true, true, true, false, true] call CBA_fnc_uniqueUnitItems))";
                         statement = "[_player, 'removeFrag'] call pbw_handgrenades_fnc_swapGrenade";
-                        icon = "\pbw_handgrenades\ui\Remove.paa";
+                        icon = "\pbw_handgrenades\ui\pbw_dm51a1_remove_frag.paa";
                     };
-                    class PBW_Action_MountFrag
-                    {
+                    class PBW_MountFrag {
                         displayName = "$STR_PBW_Action_MountFrag";
                         condition = "('PBW_DM51A1_NoFrag' in ([_player, false, true, true, true, false, true] call CBA_fnc_uniqueUnitItems))";
                         statement = "[_player, 'mountFrag'] call pbw_handgrenades_fnc_swapGrenade";
-                        icon = "\pbw_handgrenades\ui\Mount.paa";
+                        icon = "\pbw_handgrenades\ui\pbw_dm51a1_mount_frag.paa";
                     };
                 };
             };
@@ -34,8 +25,7 @@ class CfgVehicles
     };
 
     class Items_Base_F;
-    class PBW_DM51A1_Penholder: Items_Base_F
-    {
+    class PBW_DM51A1_Penholder: Items_Base_F {
         author = "$STR_pbw_main_authors"
         scope = 2;
         scopeCurator = 2;
@@ -49,13 +39,11 @@ class CfgVehicles
     };
 
     class ThingX;
-    class Items_base_F: ThingX
-    {
+    class Items_base_F: ThingX {
         class EventHandlers;
     };
 
-    class PBW_DM51A1_Box: Items_base_F
-    {
+    class PBW_DM51A1_Box: Items_base_F {
         author = "$STR_pbw_main_authors"
         scope = 2;
         scopeCurator = 2;
@@ -70,95 +58,80 @@ class CfgVehicles
         ace_dragging_canDrag = 1;
         ace_dragging_canCarry = 1;
 
-        class EventHandlers: EventHandlers
-        {
+        class EventHandlers: EventHandlers {
             init = "_this call pbw_handgrenades_fnc_boxInit";
         };
 
-        class AnimationSources
-        {
-            class Top
-            {
+        class AnimationSources {
+            class Top {
                 source = "user";
                 animPeriod = 0.7;
                 initPhase = 0;
             };
 
-            class Grenade001
-            {
+            class Grenade001 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade002
-            {
+            class Grenade002 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade003
-            {
+            class Grenade003 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade004
-            {
+            class Grenade004 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade005
-            {
+            class Grenade005 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade006
-            {
+            class Grenade006 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade007
-            {
+            class Grenade007 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade008
-            {
+            class Grenade008 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade009
-            {
+            class Grenade009 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
 
-            class Grenade010
-            {
+            class Grenade010 {
                 source = "user";
                 animPeriod = 0;
                 initPhase = 1;
             };
         };
 
-        class ACE_Actions: ACE_Actions
-        {
-            class ACE_MainActions: ACE_MainActions
-            {
+        class ACE_Actions: ACE_Actions {
+            class ACE_MainActions: ACE_MainActions {
                 condition = "true";
                 distance = 3;
                 selection = "";

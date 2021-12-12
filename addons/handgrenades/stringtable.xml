@@ -37,9 +37,9 @@
             </Key>
         </Container>
         <Container name="actions">
-            <Key ID="STR_PBW_Action_WaKaBase">
-                <English>PBW Waffenkammer</English>
-                <German>PBW Waffenkammer</German>
+            <Key ID="STR_PBW_Action_Frag">
+                <English>Grenade</English>
+                <German>Granate</German>
             </Key>
             <Key ID="STR_PBW_Action_MountFrag">
                 <English>Mount fragmentation sleeve</English>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="PBW">
+    <Package name="Mines">
+        <Container name="Misc">
+            <Key ID="STR_pbw_mines_DM12_Name">
+                <English>DM12 directional mine</English>
+                <German>DM12 Panzerabwehrrichtmine</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_NameShort">
+                <English>DM12 PARM</English>
+                <German>DM12 PARM</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_Desc">
+                <English>Type: Directional mine, placed along road sides&lt;br /&gt;Rounds: 1&lt;br /&gt;Used in: Ground</English>
+                <German>Typ: Panzerabwehrrichtmine, kann an Straßen- und Wegrändern platziert werden&lt;br /&gt;Patronen: 1&lt;br /&gt;Eingesetzt von: Boden</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_Trigger">
+                <English>Fibre optic trigger cable</English>
+                <German>Lichtwellenleiter</German>
+            </Key>
+        </Container>
+        <Container name="Actions">
+            <Key ID="STR_pbw_mines_DM12_PlaceFiberOpticCableAction">
+                <English>Place fibre optic trigger cable (%1 m left)</English>
+                <German>Platziere Lichtwellenleiter (%1 m übrig)</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_FiberOpticCableTooShort">
+                <English>Fibre optic trigger cable too short</English>
+                <German>Lichtwellenleiter zu kurz</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_PlaceFiberOpticCable">
+                <English>Lay fibre optic trigger cable</English>
+                <German>Lichtwellenleiter verlegen</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_PickupFiberOpticCable">
+                <English>Pickup Fibre optic trigger cable</English>
+                <German>Lichtwellenleiter aufnehmen</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_Cancel">
+                <English>Cancel</English>
+                <German>Abbrechen</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_Pickup">
+                <English>Pickup DM12 PARM</English>
+                <German>DM12 PARM aufnehmen</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_Arm">
+                <English>Arm DM12 PARM</English>
+                <German>DM12 PARM schärfen</German>
+            </Key>
+            <Key ID="STR_pbw_mines_DM12_Defuse">
+                <English>Defuse DM12 PARM</English>
+                <German>DM12 PARM entschärfen</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>

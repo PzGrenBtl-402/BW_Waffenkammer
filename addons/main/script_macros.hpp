@@ -1,0 +1,7 @@
+#define QUOTE(var1) #var1
+
+#define VERSION     MAJOR.MINOR
+#define VERSION_STR MAJOR.MINOR.PATCHLVL.BUILD
+#define VERSION_AR  MAJOR,MINOR,PATCHLVL,BUILD
+
+#define VERSION_CONFIG version = VERSION; versionStr = QUOTE(VERSION); versionAr[] = {VERSION_AR}

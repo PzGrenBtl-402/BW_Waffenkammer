@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="pbw">
+    <Package name="main">
+        <Key ID="STR_pbw_main_authors">
+            <English>Herr_KaLeun, Lemonberries, Timi007</English>
+            <German>Herr_KaLeun, Lemonberries, Timi007</German>
+        </Key>
+        <Key ID="STR_pbw_main_url">
+            <English>Linkplaceholder</English>
+            <German>Linkplaceholder</German>
+        </Key>
+    </Package>
+</Project>

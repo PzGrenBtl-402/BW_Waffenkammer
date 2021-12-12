@@ -12,8 +12,8 @@
             </Key>
 
             <Key ID="STR_PBW_DM51A1_Frag_Name">
-                <English>DM51A1</English>
-                <German>DM51A1</German>
+                <English>DM51A1 HE-Frag Grenade</English>
+                <German>DM51A1 Splittergranate</German>
             </Key>
             <Key ID="STR_PBW_DM51A1_Frag_NameShort">
                 <English>HE-Frag Grenade</English>
@@ -24,8 +24,8 @@
                 <German>Typ: Splittergranate (defensiv)&lt;br /&gt;Patronen: 1&lt;br /&gt;Eingesetzt von: Hand</German>
             </Key>
             <Key ID="STR_PBW_DM51A1_NoFrag_Name">
-                <English>DM51A1</English>
-                <German>DM51A1</German>
+                <English>DM51A1 HE Grenade</English>
+                <German>DM51A1 Sprenggranate</German>
             </Key>
             <Key ID="STR_PBW_DM51A1_NoFrag_NameShort">
                 <English>HE Grenade</English>

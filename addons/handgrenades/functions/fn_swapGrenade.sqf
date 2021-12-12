@@ -3,16 +3,17 @@
  *  Author: Lemonberries
  *
  *  Description:
- *      [Description]
+ *      Switches the granades between the version with or without fragmentation sleeve.
  *
  *  Parameter(s):
- *      0: [TYPE] - [argument name]
+ *      0: OBJECT - Player.
+ *      1: STRING - Type of switch: "removeFrag" or "mountFrag"
  *
  *  Returns:
- *      [TYPE] - [return name]
+ *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      [_player, "removeFrag"] call pbw_handgrenades_fnc_swapGrenade
  *
  */
 

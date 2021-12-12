@@ -15,8 +15,7 @@ class CfgPatches {
             "ace_frag",
             "ace_interact_menu",
             "ace_dragging",
-            "ace_cargo",
-            "ace_medical_treatment"
+            "ace_cargo"
         };
         author = "$STR_pbw_main_authors";
         authors[] = {"Herr_KaLeun", "Lemonberries"};
@@ -30,3 +29,4 @@ class CfgPatches {
 #include "CfgAmmo.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgEventHandlers.hpp"

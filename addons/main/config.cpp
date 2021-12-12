@@ -13,19 +13,6 @@ class CfgPatches {
     };
 };
 
-class CfgMods {
-    class pbw_main {
-        dir = "@BW_Waffenkammer";
-        name = "Bundeswehr Waffenkammer";
-        hidePicture = "true";
-        hideName = "true";
-        actionName = "GitHub";
-        action = "$STR_pbw_main_url";
-        description = "Issue Tracker: ";
-    };
-};
-
-
 class CfgSettings {
     class CBA {
         class Versioning {

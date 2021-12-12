@@ -15,7 +15,7 @@ class CfgPatches {
 
 class CfgMods {
     class pbw_main {
-        dir = "@Bundeswehr_Waffenkammer";
+        dir = "@BW_Waffenkammer";
         name = "Bundeswehr Waffenkammer";
         picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";

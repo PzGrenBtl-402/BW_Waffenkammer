@@ -2,75 +2,75 @@
 <Project name="PBW">
     <Package name="handgranades">
         <Container name="names">
-            <Key ID="STR_PBW_DM51A1_Box">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Box">
                 <English>DM51A1 Box</English>
                 <German>DM51A1 Kiste</German>
             </Key>
-            <Key ID="STR_PBW_DM51A1_Penholder">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Penholder">
                 <English>Pen holder</English>
                 <German>Stiftehalter</German>
             </Key>
 
-            <Key ID="STR_PBW_DM51A1_Frag_Name">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Frag_Name">
                 <English>DM51A1 HE-Frag Grenade</English>
                 <German>DM51A1 Splittergranate</German>
             </Key>
-            <Key ID="STR_PBW_DM51A1_Frag_NameShort">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Frag_NameShort">
                 <English>HE-Frag Grenade</English>
                 <German>Splittergranate</German>
             </Key>
-            <Key ID="STR_PBW_DM51A1_Frag_Desc">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Frag_Desc">
                 <English>Type: High explosive fragmentation Grenade (defensive)&lt;br /&gt;Rounds: 1&lt;br /&gt;Used in: Hand</English>
                 <German>Typ: Splittergranate (defensiv)&lt;br /&gt;Patronen: 1&lt;br /&gt;Eingesetzt von: Hand</German>
             </Key>
-            <Key ID="STR_PBW_DM51A1_NoFrag_Name">
+            <Key ID="STR_pbw_handgrenades_DM51A1_NoFrag_Name">
                 <English>DM51A1 HE Grenade</English>
                 <German>DM51A1 Sprenggranate</German>
             </Key>
-            <Key ID="STR_PBW_DM51A1_NoFrag_NameShort">
+            <Key ID="STR_pbw_handgrenades_DM51A1_NoFrag_NameShort">
                 <English>HE Grenade</English>
                 <German>Sprenggranate</German>
             </Key>
-            <Key ID="STR_PBW_DM51A1_NoFrag_Desc">
+            <Key ID="STR_pbw_handgrenades_DM51A1_NoFrag_Desc">
                 <English>Type: High explosive Grenade (offensive)&lt;br /&gt;Rounds: 1&lt;br /&gt;Used in: Hand</English>
                 <German>Typ: Sprenggranate (offensiv)&lt;br /&gt;Patronen: 1&lt;br /&gt;Eingesetzt von: Hand</German>
             </Key>
         </Container>
         <Container name="actions">
-            <Key ID="STR_PBW_Action_Frag">
+            <Key ID="STR_pbw_handgrenades_DM51A1_FragCategory">
                 <English>Grenade</English>
                 <German>Granate</German>
             </Key>
-            <Key ID="STR_PBW_Action_MountFrag">
+            <Key ID="STR_pbw_handgrenades_DM51A1_MountFrag">
                 <English>Mount fragmentation sleeve</English>
                 <German>Splitterkörper anbringen</German>
             </Key>
-            <Key ID="STR_PBW_Action_RemoveFrag">
+            <Key ID="STR_pbw_handgrenades_DM51A1_RemoveFrag">
                 <English>Remove fragmentation sleeve</English>
                 <German>Splitterkörper abnehmen</German>
             </Key>
-            <Key ID="STR_PBW_Action_Mounting">
+            <Key ID="STR_pbw_handgrenades_DM51A1_MountingFrag">
                 <English>Mounting fragmentation sleeve...</English>
                 <German>Splitterkörper anbringen...</German>
             </Key>
-            <Key ID="STR_PBW_Action_Removing">
+            <Key ID="STR_pbw_handgrenades_DM51A1_RemovingFrag">
                 <English>Removing fragmentation sleeve...</English>
                 <German>Splitterkörper abnehmen...</German>
             </Key>
 
-            <Key ID="STR_PBW_Action_Box_Open">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Box_Open">
                 <English>Open Box</English>
                 <German>Kiste öffnen</German>
             </Key>
-            <Key ID="STR_PBW_Action_Box_Close">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Box_Close">
                 <English>Close Box</English>
                 <German>Kiste schließen</German>
             </Key>
-            <Key ID="STR_PBW_Action_Box_Take">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Box_Take">
                 <English>Take Grenade</English>
                 <German>Granate nehmen</German>
             </Key>
-            <Key ID="STR_PBW_Action_Box_Stow">
+            <Key ID="STR_pbw_handgrenades_DM51A1_Box_Stow">
                 <English>Put away Grenade</English>
                 <German>Granate weglegen</German>
             </Key>

@@ -4,17 +4,17 @@ class CfgVehicles {
         class ACE_SelfActions {
             class ACE_Equipment {
                 class PBW_Handgrenades {
-                    displayName = "$STR_PBW_Action_Frag";
+                    displayName = "$STR_pbw_handgrenades_DM51A1_FragCategory";
                     icon = "\pbw_handgrenades\ui\pbw_dm51a1_grenade.paa";
 
                     class PBW_RemoveFrag {
-                        displayName = "$STR_PBW_Action_RemoveFrag";
+                        displayName = "$STR_pbw_handgrenades_DM51A1_RemoveFrag";
                         condition = "('PBW_DM51A1_Frag' in ([_player, false, true, true, true, false, true] call CBA_fnc_uniqueUnitItems))";
                         statement = "[_player, 'removeFrag'] call pbw_handgrenades_fnc_swapGrenade";
                         icon = "\pbw_handgrenades\ui\pbw_dm51a1_remove_frag.paa";
                     };
                     class PBW_MountFrag {
-                        displayName = "$STR_PBW_Action_MountFrag";
+                        displayName = "$STR_pbw_handgrenades_DM51A1_MountFrag";
                         condition = "('PBW_DM51A1_NoFrag' in ([_player, false, true, true, true, false, true] call CBA_fnc_uniqueUnitItems))";
                         statement = "[_player, 'mountFrag'] call pbw_handgrenades_fnc_swapGrenade";
                         icon = "\pbw_handgrenades\ui\pbw_dm51a1_mount_frag.paa";
@@ -29,25 +29,25 @@ class CfgVehicles {
         author = "$STR_pbw_main_authors";
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_PBW_DM51A1_Penholder";
+        displayName = "$STR_pbw_handgrenades_DM51A1_Penholder";
         model = "\pbw_handgrenades\data\pbw_dm51a1_penholder.p3d";
         vehicleClass = "Small_items";
         icon = "iconObject_1x1";
         editorCategory = "EdCat_Things";
         editorSubcategory = "EdSubcat_Office";
-        editorPreview = "";
+        editorPreview = "\pbw_handgrenades\editorpreview\pbw_dm51a1_penholder.jpg";
     };
 
     class PBW_DM51A1_Box: Items_base_F {
         author = "$STR_pbw_main_authors";
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_PBW_DM51A1_Box";
+        displayName = "$STR_pbw_handgrenades_DM51A1_Box";
         model = "\pbw_handgrenades\data\pbw_dm51a1_box.p3d";
         vehicleClass = "Ammo";
         icon = "iconObject_1x1";
         editorCategory = "EdCat_Supplies";
-        editorPreview = "";
+        editorPreview = "\pbw_handgrenades\editorpreview\pbw_dm51a1_box.jpg";
 
         ace_cargo_size = 1;
         ace_cargo_canLoad = 1;

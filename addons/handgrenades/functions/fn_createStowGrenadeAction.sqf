@@ -25,7 +25,7 @@ private _selection = format ["G%1", _grenadeId - 1];
 
 private _stowGrenade = [
     format ["pbw_stowGrenade_%1", _grenadeId],
-    localize "STR_PBW_Action_Box_Stow",
+    localize "STR_pbw_handgrenades_DM51A1_Box_Stow",
     "",
     {
         params ["_box", "_player", "_args"];

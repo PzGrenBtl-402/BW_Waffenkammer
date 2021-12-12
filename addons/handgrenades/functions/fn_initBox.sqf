@@ -22,7 +22,7 @@ if (!hasInterface) exitWith {};
 
 private _openBox = [
     "pbw_openBox",
-    localize "STR_PBW_Action_Box_Open",
+    localize "STR_pbw_handgrenades_DM51A1_Box_Open",
     "",
     {
         params ["_box"];
@@ -43,7 +43,7 @@ private _openBox = [
 
 private _closeBox = [
     "pbw_closeBox",
-    localize "STR_PBW_Action_Box_Close",
+    localize "STR_pbw_handgrenades_DM51A1_Box_Close",
     "",
     {
         params ["_box"];

@@ -23,11 +23,11 @@ private ["_itemToAdd", "_itemToRemove", "_text"];
 if (_typeOfSwap isEqualTo "removeFrag") then {
     _itemToAdd = "PBW_DM51A1_NoFrag";
     _itemToRemove = "PBW_DM51A1_Frag";
-    _text = localize "STR_PBW_Action_Removing";
+    _text = localize "STR_pbw_handgrenades_DM51A1_RemovingFrag";
 } else {
     _itemToAdd = "PBW_DM51A1_Frag";
     _itemToRemove = "PBW_DM51A1_NoFrag";
-    _text = localize "STR_PBW_Action_Mounting";
+    _text = localize "STR_pbw_handgrenades_DM51A1_MountingFrag";
 };
 
 if (_itemToRemove in ((getMagazineCargo (vestContainer _unit)) select 0)) exitWith {

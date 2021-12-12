@@ -25,7 +25,7 @@ private _selection = format ["G%1", _grenadeId - 1];
 
 private _takeGrenade = [
     format ["pbw_takeGrenade_%1", _grenadeId],
-    localize "STR_PBW_Action_Box_Take",
+    localize "STR_pbw_handgrenades_DM51A1_Box_Take",
     "",
     {
         params ["_box", "_player", "_args"];

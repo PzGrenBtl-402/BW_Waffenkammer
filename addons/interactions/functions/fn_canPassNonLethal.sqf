@@ -23,7 +23,7 @@ private _magazines = magazines _player;
 private _condition = false;
 
 {
-  if (_x in ace_weaponselect_GrenadesNonFrag && _target canAdd _x) exitWith {_condition = true};
+    if (_x in ace_weaponselect_GrenadesNonFrag && _target canAdd _x) exitWith {_condition = true};
 } forEach _magazines;
 
 _condition

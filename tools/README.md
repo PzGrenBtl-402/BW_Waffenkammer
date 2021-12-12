@@ -1,4 +1,4 @@
-# Building PzGrenBtl402 from source (HEMTT)
+# Building Bundeswehr Waffenkammer from source (HEMTT)
 
 ## Requirements
 

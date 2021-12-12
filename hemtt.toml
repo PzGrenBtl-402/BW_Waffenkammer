@@ -1,8 +1,6 @@
 name = "Bundeswehr Waffenkammer"
 prefix = "pbw"
 author = "Herr_KaLeun, Lemonberries, Timi007"
-# template = "cba"
-mainprefix = "z"
 files = [
     "*.dll",
     "*.so",
@@ -14,12 +12,12 @@ files = [
 ]
 folder_optionals = false
 
-modname = "Bundeswehr_Waffenkammer"
+modname = "BW_Waffenkammer"
 key_name = "pbw_waka_{{version}}"
 authority = "pbw_waka_{{version}}-{{git \"id 8\"}}"
 
 releasebuild = [
-    "@zip Bundeswehr_Waffenkammer_{{semver.major}}.{{semver.minor}}.{{semver.patch}}"
+    "@zip BW_Waffenkammer_{{semver.major}}.{{semver.minor}}.{{semver.patch}}"
 ]
 
 [header_exts]

@@ -1,12 +1,12 @@
 class CfgFunctions {
-	class pbw_interactions {
-		class pbw_interactions_granade {
-			file = "pbw_interactions\functions";
+    class pbw_interactions {
+        class pbw_interactions_granade {
+            file = "pbw_interactions\functions";
 
-			class canPassLethal;
-			class canPassNonLethal;
-			class passLethal;
-			class passNonLethal;
-		};
-	};
+            class canPassLethal;
+            class canPassNonLethal;
+            class passLethal;
+            class passNonLethal;
+        };
+    };
 };

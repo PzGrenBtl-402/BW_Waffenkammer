@@ -1,17 +1,17 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
-        name = COMPONENT_NAME;
+    class pbw_blank {
+        name = "PBW - Blank";
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"PzGrenBtl402_Main"};
-        author = ECSTRING(Main, authors);
+        requiredAddons[] = {"pbw_main"};
+        author = "$STR_pbw_main_authors";
         authors[] = {""};
-        url = ECSTRING(Main, URL);
+        url = "$STR_pbw_main_url";
         VERSION_CONFIG;
     };
 };
 
-#include "CfgEventHandlers.hpp"
+#include "CfgFunctions.hpp"

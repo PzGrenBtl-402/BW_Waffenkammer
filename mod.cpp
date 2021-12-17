@@ -1,5 +1,6 @@
 name = "Bundeswehr Waffenkammer";
-description = "Bundeswehr Waffenkammer brings you additional weapons and equipment of the German Armed Forces.";
+description = "Bugtracker: https://github.com/PzGrenBtl-402/BW_Waffenkammer/issues";
+overview = "Bundeswehr Waffenkammer brings you additional weapons and equipment of the German Armed Forces.";
 author = "Herr_KaLeun, Lemonberries, Timi007";
 actionName = "GitHub";
 action = "https://github.com/PzGrenBtl-402/BW_Waffenkammer";
@@ -9,4 +10,3 @@ picture = "pbw_waka_logo.paa";
 hideName = 0;
 hidePicture = 0;
 tooltipOwned = "Bundeswehr Waffenkammer";
-overview = "Bundeswehr Waffenkammer";

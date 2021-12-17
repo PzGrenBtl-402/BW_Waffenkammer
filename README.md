@@ -17,7 +17,7 @@ The vision behind this mod is to fill the gaps from other German weapon mods.
 - [**Bundeswehr Kleiderkammer**](https://forums.bohemia.net/forums/topic/181088-bundeswehr-kleiderkammer-gear-of-the-german-armed-forces/) Gear of the German Armed Forces
 
 ## Contributing
-- [Issues & Feature requests]()
+- [Issues & Feature requests](https://github.com/PzGrenBtl-402/BW_Waffenkammer/issues)
 
 ## License
-Bundeswehr Waffenkammer is licensed under Arma Public License No Derivatives ([APL-ND]()).
+Bundeswehr Waffenkammer is licensed under Arma Public License No Derivatives ([APL-ND](https://github.com/PzGrenBtl-402/BW_Waffenkammer/blob/master/LICENSE)).

@@ -15,7 +15,3 @@ keys/*
 .hemtt/local
 hemtt.exe
 ####
-
-## 3D Models
-*.blend
-*.p3d

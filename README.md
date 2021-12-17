@@ -1,6 +1,10 @@
 # Bundeswehr Waffenkammer
 
 <p align="center">
+    <img src="https://raw.githubusercontent.com/PzGrenBtl-402/BW_Waffenkammer/master/extras/assets/logo/pbw_waka_logo.png" height="256">
+</p>
+
+<p align="center">
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA A3</a> and <a href="https://github.com/acemod/ACE3/releases/latest">ACE3</a>.</sup></strong>
 </p>
 

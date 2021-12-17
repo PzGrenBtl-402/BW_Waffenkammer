@@ -1,5 +1,3 @@
-# Bundeswehr Waffenkammer
-
 <p align="center">
     <img src="https://raw.githubusercontent.com/PzGrenBtl-402/BW_Waffenkammer/master/extras/assets/logo/pbw_waka_logo.png" height="256">
 </p>

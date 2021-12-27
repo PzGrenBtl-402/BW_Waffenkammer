@@ -6,10 +6,9 @@
  *      Event triggered after player placed fiber optic trigger cable. Starts the sensor and checks if it should trigger the mine.
  *
  *  Parameter(s):
- *      0: OBJECT - Player who placed the DM12.
- *      1: OBJECT - DM12 which was placed.
- *      2: STRING - DM12 magazine classname.
- *      3: ARRAY - Fibre optic cable end positon ATL.
+ *      0: OBJECT - DM12 which was placed.
+ *      1: STRING - DM12 magazine classname.
+ *      2: ARRAY - Fibre optic cable end positon ATL.
  *
  *  Returns:
  *      Nothing.
@@ -18,8 +17,6 @@
  *      _this call pbw_mines_fnc_startSensorCheck
  *
  */
-
-params ["_dm12", "_magClass", "_endPosATL"];
 
 [{
     params ["_PFHArgs", "_PFHID"];
@@ -40,6 +37,7 @@ params ["_dm12", "_magClass", "_endPosATL"];
     private _allVehicles = vehicles select {_x isKindOf "Car" || _x isKindOf "Tank"};
     // The sensor doesn't trigger in MP when the vehicles drive fast.
     // Probably because inAreaArray checks object pos in simulation time scope.
+    // Thats why we get the positions ourselfs and pass them to check if they're in the area.
     private _allPositions = _allVehicles apply {getPosATLVisual _x};
     private _positionsInTriggerArea = _allPositions inAreaArray [_centerATL, _xAxis, _yAxis, _angle, true, _zAxis];
 

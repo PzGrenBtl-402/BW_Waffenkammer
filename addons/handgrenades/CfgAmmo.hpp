@@ -8,7 +8,7 @@ class CfgAmmo {
         ace_frag_metal = 296;
         ace_frag_charge = 64;
         ace_frag_gurney_c = 2930;
-        ace_frag_gurney_k = 1/2;
+        ace_frag_gurney_k = 0.5;
         ace_frag_classes[] = {"ACE_frag_medium_HD"};
     };
 

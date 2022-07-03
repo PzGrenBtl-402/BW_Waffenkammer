@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/PzGrenBtl-402/BW_Waffenkammer/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.0.1-blue.svg?style=flat-square" alt="BW Waffenkammer Version">
+        <img src="https://img.shields.io/badge/Version-1.0.2-blue.svg?style=flat-square" alt="BW Waffenkammer Version">
     </a>
     <a href="https://github.com/PzGrenBtl-402/BW_Waffenkammer/releases/latest">
         <img src="https://img.shields.io/github/downloads/PzGrenBtl-402/BW_Waffenkammer/total.svg?style=flat-square&label=Downloads" alt="BW Waffenkammer Downloads">

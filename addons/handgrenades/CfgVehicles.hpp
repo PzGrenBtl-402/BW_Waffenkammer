@@ -6,18 +6,21 @@ class CfgVehicles {
                 class PBW_Handgrenades {
                     displayName = "$STR_pbw_handgrenades_DM51A1_FragCategory";
                     icon = "\pbw_handgrenades\ui\pbw_dm51a1_grenade.paa";
+                    exceptions[] = {"isNotInside", "isNotSitting"};
 
                     class PBW_RemoveFrag {
                         displayName = "$STR_pbw_handgrenades_DM51A1_RemoveFrag";
                         condition = "('PBW_DM51A1_Frag' in ([_player, false, true, true, true, false, true] call CBA_fnc_uniqueUnitItems))";
                         statement = "[_player, 'removeFrag'] call pbw_handgrenades_fnc_swapGrenade";
                         icon = "\pbw_handgrenades\ui\pbw_dm51a1_remove_frag.paa";
+                        exceptions[] = {"isNotInside", "isNotSitting"};
                     };
                     class PBW_MountFrag {
                         displayName = "$STR_pbw_handgrenades_DM51A1_MountFrag";
                         condition = "('PBW_DM51A1_NoFrag' in ([_player, false, true, true, true, false, true] call CBA_fnc_uniqueUnitItems))";
                         statement = "[_player, 'mountFrag'] call pbw_handgrenades_fnc_swapGrenade";
                         icon = "\pbw_handgrenades\ui\pbw_dm51a1_mount_frag.paa";
+                        exceptions[] = {"isNotInside", "isNotSitting"};
                     };
                 };
             };

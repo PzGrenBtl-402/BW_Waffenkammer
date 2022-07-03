@@ -17,7 +17,7 @@
  *
  */
 
-params ["_unit", "_typeOfSwap"];
+params [["_unit", objNull, [objNull]], ["_typeOfSwap", "", [""]]];
 private ["_itemToAdd", "_itemToRemove", "_text"];
 
 if (_typeOfSwap isEqualTo "removeFrag") then {
@@ -30,32 +30,38 @@ if (_typeOfSwap isEqualTo "removeFrag") then {
     _text = localize "STR_pbw_handgrenades_DM51A1_MountingFrag";
 };
 
-if (_itemToRemove in ((getMagazineCargo (vestContainer _unit)) select 0)) exitWith {
-    [2, [_unit, _itemToRemove, _itemToAdd], {
-        params ["_args"];
-        _args params ["_unit", "_itemToRemove", "_itemToAdd"];
-
-        _unit removeItemFromVest _itemToRemove;
-        _unit addItemToVest _itemToAdd;
-    }, {}, _text] call ace_common_fnc_progressBar;
+private _itemLocation = switch true do {
+    case (_itemToRemove in ((getMagazineCargo (vestContainer _unit)) select 0)): {
+        "vest"
+    };
+    case (_itemToRemove in ((getMagazineCargo (uniformContainer _unit)) select 0)): {
+        "uniform"
+    };
+    case (_itemToRemove in ((getMagazineCargo (backpackContainer _unit)) select 0)): {
+        "backpack"
+    };
+    default {""};
 };
 
-if (_itemToRemove in ((getMagazineCargo (uniformContainer _unit)) select 0)) exitWith {
-    [2, [_unit, _itemToRemove, _itemToAdd], {
-        params ["_args"];
-        _args params ["_unit", "_itemToRemove", "_itemToAdd"];
+if (_itemLocation isEqualTo "") exitWith {};
 
-        _unit removeItemFromUniform _itemToRemove;
-        _unit addItemToUniform _itemToAdd;
-    }, {}, _text] call ace_common_fnc_progressBar;
-};
+private _swapTime = 2;
+[_swapTime, [_unit, _itemLocation, _itemToRemove, _itemToAdd], {
+    params ["_args"];
+    _args params ["_unit", "_itemLocation", "_itemToRemove", "_itemToAdd"];
 
-if (_itemToRemove in ((getMagazineCargo (backpackContainer _unit)) select 0)) exitWith {
-    [2, [_unit, _itemToRemove, _itemToAdd], {
-        params ["_args"];
-        _args params ["_unit", "_itemToRemove", "_itemToAdd"];
-
-        _unit removeItemFromBackpack _itemToRemove;
-        _unit addItemToBackpack _itemToAdd;
-    }, {}, _text] call ace_common_fnc_progressBar;
-};
+    switch _itemLocation do {
+        case "vest": {
+            _unit removeItemFromVest _itemToRemove;
+            _unit addItemToVest _itemToAdd;
+        };
+        case "uniform": {
+            _unit removeItemFromUniform _itemToRemove;
+            _unit addItemToUniform _itemToAdd;
+        };
+        case "backpack": {
+            _unit removeItemFromBackpack _itemToRemove;
+            _unit addItemToBackpack _itemToAdd;
+        };
+    };
+}, {}, _text, {true}, ["isNotInside", "isNotSitting"]] call ace_common_fnc_progressBar;

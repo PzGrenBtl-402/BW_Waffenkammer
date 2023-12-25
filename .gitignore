@@ -10,8 +10,9 @@ texHeaders.bin
 Thumbs.db
 
 ## Added by HEMTT
+hemtt
+hemtt.exe
 releases/*
 keys/*
-.hemtt/local
-hemtt.exe
+.hemttout/
 ####

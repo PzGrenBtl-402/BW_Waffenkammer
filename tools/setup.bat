@@ -1,23 +1,16 @@
 ;@Findstr -bv ;@F "%~f0" | powershell -Command - & pause & goto:eof
 
+Write-Output "=> Downloading ..."
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$client = New-Object Net.WebClient
 
-Write-Output "=> Creating Temp working directory ..."
-New-Item -ItemType Directory -Path ".\temp" -Force | Out-Null
+$url = "https://github.com/BrettMayson/HEMTT/releases/latest/download/windows-x64.zip"
+(New-Object Net.WebClient).DownloadFile($url, "hemtt.zip"); Write-Output "$url => hemtt.zip"
 
-Write-Output "=> Downloading HEMTT (Windows) ..."
-$client.DownloadFile("https://github.com/BrettMayson/HEMTT/releases/download/v0.7.6/hemtt-v0.7.6-x86_64-pc-windows-msvc.zip", ".\temp\hemtt.zip")
-$client.dispose()
+Write-Output "`n=> Extracting ..."
+Expand-Archive -Path "hemtt.zip" -DestinationPath "..\." -Force; Write-Output "hemtt.zip"
+Remove-Item "hemtt.zip"
 
-Write-Output "=> Extracting HEMTT ..."
-Expand-Archive ".\temp\hemtt.zip" -DestinationPath ".\temp\hemtt"
+Write-Output "`n=> Verifying ..."
+Start-Process -FilePath ..\hemtt.exe -ArgumentList --version -NoNewWindow -Wait
 
-Move-Item -Path ".\temp\hemtt\hemtt.exe" -Destination "..\hemtt.exe" -Force
-
-Remove-Item -Recurse -Force -Path ".\temp"
-
-Write-Output "=> Updating HEMTT ..."
-Invoke-Expression "..\hemtt.exe update"
-
-Write-Output "=> HEMTT successfully installed to project!"
+Write-Output "`nTools successfully installed to project!"

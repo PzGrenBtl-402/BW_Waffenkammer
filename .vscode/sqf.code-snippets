@@ -17,7 +17,7 @@
             " *      ${4: TYPE - Description}",
             " *",
             " *  Example:",
-            " *      _this call PzGrenBtl402_${TM_DIRECTORY/(.*)addons\\\\(.*)\\\\functions(.*)/$2/}_${TM_FILENAME_BASE}",
+            " *      _this call pbw_${TM_DIRECTORY/(.*)addons\\\\(.*)\\\\functions(.*)/$2/}_${TM_FILENAME_BASE}",
             " *",
             " */"
         ],

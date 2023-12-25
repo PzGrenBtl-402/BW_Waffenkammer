@@ -18,7 +18,7 @@ authority = "pbw_waka"
 git_hash = 0
 
 [asc]
-enabled = true
+enabled = false
 exclude = [
     "/xeh_prep.sqf"
 ]

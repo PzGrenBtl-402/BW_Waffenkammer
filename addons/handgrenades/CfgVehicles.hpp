@@ -41,7 +41,7 @@ class CfgVehicles {
         editorPreview = "\pbw_handgrenades\editorpreview\pbw_dm51a1_penholder.jpg";
     };
 
-    class PBW_DM51A1_Box: Items_base_F {
+    class PBW_DM51A1_Box: Items_Base_F {
         author = "$STR_pbw_main_authors";
         scope = 2;
         scopeCurator = 2;

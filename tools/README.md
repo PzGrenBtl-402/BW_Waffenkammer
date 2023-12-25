@@ -15,4 +15,4 @@ Execute `setup.bat` in `tools` folder (Windows) or download [this HEMTT binary](
 
 ### Create a Release Build
 
-To create a complete build that you can use without the source files, execute `build_release.bat` (Windows) or run `$ hemtt build --release -f` (Linux) in the root folder. This will populate the release folder with binarized PBOs that you can redistribute. These handle like those of any other mod.
+To create a complete build that you can use without the source files, execute `build_release.bat` (Windows) or run `$ hemtt release` (Linux) in the root folder. This will populate the release folder with binarized PBOs that you can redistribute. These handle like those of any other mod.

@@ -1,0 +1,30 @@
+name = "BW_Waffenkammer"
+prefix = "pbw"
+author = "Herr_KaLeun, Lemonberries, Timi007"
+
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "LICENSE",
+    "pbw_waka_logo.paa",
+    "meta.cpp"
+]
+
+[signing]
+authority = "pbw_waka"
+
+[version]
+git_hash = 0
+
+[asc]
+enabled = true
+exclude = [
+    "/xeh_prep.sqf"
+]
+
+[hemtt.config]
+preset = "Hemtt"
+
+[hemtt.release]
+folder = "BW_Waffenkammer"

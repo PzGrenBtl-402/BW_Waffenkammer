@@ -17,12 +17,6 @@ authority = "pbw_waka"
 [version]
 git_hash = 0
 
-[asc]
-enabled = false
-exclude = [
-    "/xeh_prep.sqf"
-]
-
 [hemtt.config]
 preset = "Hemtt"
 

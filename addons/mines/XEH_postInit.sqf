@@ -3,10 +3,10 @@
 if (hasInterface) then {
     pbw_mines_isPlacingCable = PLACE_CANCEL;
     ["ace_interactMenuOpened", {pbw_mines_isPlacingCable = PLACE_CANCEL;}] call CBA_fnc_addEventHandler;
-    player addEventHandler ["killed", {pbw_mines_isPlacingCable = PLACE_CANCEL;}];
+    player addEventHandler ["Killed", {pbw_mines_isPlacingCable = PLACE_CANCEL;}];
     ["ace_unconscious", {
         params ["_unit"];
-        
+
         if (player isEqualTo _unit) exitWith {
             pbw_mines_isPlacingCable = PLACE_CANCEL;
         };
@@ -15,10 +15,9 @@ if (hasInterface) then {
 
 ["pbw_mines_lockDM12", {
     params ["_dm12", "_lock"];
-    
-    private _lockState = if (_lock) then {2} else {0};
-    _dm12 lock _lockState;
-    
+
+    _dm12 lock ([0, 2] select _lock);
+
     [_dm12, !_lock] call ace_dragging_fnc_setCarryable;
     [_dm12, !_lock] call ace_dragging_fnc_setDraggable;
 }] call CBA_fnc_addEventHandler;

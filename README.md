@@ -28,7 +28,6 @@ The vision behind this mod is to fill the gaps from other German weapon mods.
 - **DM51A1** grenade with and without the fragmentation sleeve
 - **DM51A1 Box** with ACE interactions
 - **DM12** directional mine
-- ACE grenade interactions
 
 ## Related work
 - [**Bundeswehr Kleiderkammer**](https://forums.bohemia.net/forums/topic/181088-bundeswehr-kleiderkammer-gear-of-the-german-armed-forces/) Gear of the German Armed Forces

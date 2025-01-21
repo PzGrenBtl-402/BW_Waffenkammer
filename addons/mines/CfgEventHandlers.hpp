@@ -1,12 +1,12 @@
 class Extended_PostInit_EventHandlers {
     class pbw_mines {
-        init = "call compile preprocessFileLineNumbers '\pbw_mines\XEH_postInit.sqf'";
+        init = "call compileScript ['\pbw_mines\XEH_postInit.sqf']";
     };
 };
 
 class Extended_DisplayLoad_EventHandlers {
     class RscDisplayMission {
-        pbw_mines = "call compile preprocessFileLineNumbers '\pbw_mines\XEH_missionDisplayLoad.sqf'";
+        pbw_mines = "call compileScript ['\pbw_mines\XEH_missionDisplayLoad.sqf']";
     };
 };
 

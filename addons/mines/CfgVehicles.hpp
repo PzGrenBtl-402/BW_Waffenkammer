@@ -24,7 +24,7 @@ class CfgVehicles {
         displayName = "$STR_pbw_mines_DM12_Name";
         displayNameShort = "$STR_pbw_mines_DM12_NameShort";
         description = "$STR_pbw_mines_DM12_Desc";
-        model = "\pbw_mines\data\pbw_dm12";
+        model = "\pbw_mines\data\pbw_dm12.p3d";
         picture = "\pbw_mines\ui\pbw_dm12_picture_ca.paa";
         editorPreview = "\pbw_mines\editorpreview\pbw_dm12.jpg";
         icon = "iconExplosiveAT";
@@ -133,7 +133,7 @@ class CfgVehicles {
 
                 weapons[] = {};
                 magazines[] = {};
-                gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
+                gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty.p3d";
                 gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
                 gunnerOutOpticsShowCursor = 0;
                 gunnerOpticsShowCursor = 0;

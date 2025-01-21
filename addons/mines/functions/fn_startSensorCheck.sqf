@@ -33,7 +33,7 @@ if (!isServer) exitWith {
     private _dm12PosATL = getPosATL _dm12;
     private _centerATL = (_dm12PosATL vectorAdd _endPosATL) vectorMultiply 0.5;
 
-    private _nearestVehicles = nearestObjects [_centerATL, ["Car", "Tank"], 100];
+    private _nearestVehicles = nearestObjects [_centerATL, ["Car", "Tank"], SENSOR_VEHICLE_RADIUS];
     if (_nearestVehicles isEqualTo []) exitWith {};
 
     private _xAxis = 0.5;

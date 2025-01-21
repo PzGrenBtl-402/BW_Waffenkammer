@@ -36,9 +36,9 @@ if (!isServer) exitWith {
     private _nearestVehicles = nearestObjects [_centerATL, ["Car", "Tank"], SENSOR_VEHICLE_RADIUS];
     if (_nearestVehicles isEqualTo []) exitWith {};
 
-    private _xAxis = 0.5;
+    private _xAxis = SENSOR_DEPTH;
     private _yAxis = _centerATL distance2D _dm12PosATL;
-    private _zAxis = 5;
+    private _zAxis = SENSOR_HEIGHT;
     private _angle = _dm12PosATL getDir _endPosATL;
 
     // The sensor doesn't trigger in MP when the vehicles drive fast.

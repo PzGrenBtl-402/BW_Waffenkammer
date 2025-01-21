@@ -1,4 +1,5 @@
 name = "BW_Waffenkammer"
+mainprefix = ""
 prefix = "pbw"
 author = "Herr_KaLeun, Lemonberries, Timi007"
 
@@ -22,3 +23,9 @@ preset = "Hemtt"
 
 [hemtt.release]
 folder = "BW_Waffenkammer"
+
+[hemtt.launch.default]
+workshop = [
+    "450814997", # CBA_A3's Workshop ID
+    "463939057" # ACE3's Workshop ID
+]

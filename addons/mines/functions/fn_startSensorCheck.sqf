@@ -45,7 +45,6 @@ if (!isServer) exitWith {
     // Probably because inAreaArray checks object pos in simulation time scope.
     // Thats why we get the positions ourselves and pass them to check if they're in the area.
     private _positions = _nearestVehicles apply {getPosATLVisual _x};
-    // inAreaArrayIndexes requires positions to be ASL and center AGL
     private _positionsInTriggerArea = _positions inAreaArray [_centerATL, _xAxis, _yAxis, _angle, true, _zAxis];
 
     if (_positionsInTriggerArea isNotEqualTo []) exitWith {

@@ -23,7 +23,7 @@ if ((_endPosATL isEqualTo []) || {_dm12 getVariable ["pbw_mines_isArmed", false]
 
 _dm12 setVariable ["pbw_mines_isArmed", true, true];
 
-["pbw_mines_lock", [_dm12, true]] call CBA_fnc_targetEvent;
+["pbw_mines_lock", [_dm12, true], _dm12] call CBA_fnc_targetEvent;
 [_dm12, false, nil, nil, nil, true] call ace_dragging_fnc_setCarryable;
 [_dm12, false, nil, nil, nil, true] call ace_dragging_fnc_setDraggable;
 

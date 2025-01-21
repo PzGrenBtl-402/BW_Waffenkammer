@@ -20,7 +20,7 @@ params ["_dm12"];
 
 if !(_dm12 getVariable ["pbw_mines_isArmed", false]) exitWith {};
 
-["pbw_mines_lock", [_dm12, false]] call CBA_fnc_targetEvent;
+["pbw_mines_lock", [_dm12, false], _dm12] call CBA_fnc_targetEvent;
 [_dm12, true, nil, nil, nil, true] call ace_dragging_fnc_setCarryable;
 [_dm12, true, nil, nil, nil, true] call ace_dragging_fnc_setDraggable;
 

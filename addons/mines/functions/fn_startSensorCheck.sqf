@@ -50,6 +50,6 @@ if (!isServer) exitWith {
     if (_positionsInTriggerArea isNotEqualTo []) exitWith {
         [_PFHID] call CBA_fnc_removePerFrameHandler;
 
-        ["pbw_mines_sensorDetectedVehicles", [_dm12, _magClass], _dm12] call CBA_fnc_targetEvent;
+        ["pbw_mines_sensorDetectedVehicles", [_dm12, _magClass]] call CBA_fnc_serverEvent;
     };
 }, 0, _this] call CBA_fnc_addPerFrameHandler;

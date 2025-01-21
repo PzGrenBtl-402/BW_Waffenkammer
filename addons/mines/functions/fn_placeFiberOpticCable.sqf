@@ -50,7 +50,7 @@ private _maxCableLength = getNumber (configFile >> "CfgMagazines" >> _magClass >
 
     _endPointHelper setPosATL _endPointPos;
 
-    private _dm12Pos = getPos _dm12;
+    private _dm12Pos = getPosATL _dm12;
     private _begin = [_dm12Pos select 0, _dm12Pos select 1, CABLE_HEIGHT];
 
     private _cableLength = 0;

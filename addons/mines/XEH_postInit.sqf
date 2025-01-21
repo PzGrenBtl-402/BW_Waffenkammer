@@ -15,6 +15,7 @@ if (hasInterface) then {
 
 if (isServer) then {
     ["pbw_mines_startSensorCheck", pbw_mines_fnc_startSensorCheck] call CBA_fnc_addEventHandler;
+    ["pbw_mines_detonateDM12", pbw_mines_fnc_detonateDM12] call CBA_fnc_addEventHandler;
     ["pbw_mines_sensorDetectedVehicles", pbw_mines_fnc_detonateDM12] call CBA_fnc_addEventHandler;
 };
 

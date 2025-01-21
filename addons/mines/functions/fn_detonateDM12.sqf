@@ -17,6 +17,10 @@
  *
  */
 
+if (!isServer) exitWith {
+    ["pbw_mines_detonateDM12", _this] call CBA_fnc_serverEvent;
+};
+
 params ["_dm12", "_magClass"];
 
 private _warheadBeginRelPos = _dm12 selectionPosition ["warhead_begin", "Memory"];
@@ -25,7 +29,7 @@ private _warheadBeginPosWorld = _dm12 modelToWorldWorld _warheadBeginRelPos;
 private _dm12Config = configFile >> "CfgMagazines" >> _magClass;
 private _rocketStarterClass = getText (_dm12Config >> "ammo");
 private _rocketStarter = _rocketStarterClass createVehicle [0, 0, 0];
-["ace_common_hideObjectGlobal", [_rocketStarter, true]] call CBA_fnc_serverEvent;
+_rocketStarter hideObjectGlobal true;
 
 private _dir0 = getDir _dm12;
 private _dir = _dir0 - deg (_dm12 animationSourcePhase "mainTurret");

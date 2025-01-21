@@ -15,10 +15,10 @@
  *      [cursorObject] call pbw_mines_fnc_canSetTrigger
  *
  */
- 
+
 params ["_dm12"];
 
-(alive _dm12) && 
+(alive _dm12) &&
 {!(_dm12 getVariable ["pbw_mines_blockSetTrigger", false])} &&
-{!(_dm12 getVariable ["pbw_mines_isTriggerSet", false])} &&
+{(_dm12 getVariable ["pbw_mines_fiberOpticCableEndPos", []]) isEqualTo []} &&
 {!(_dm12 getVariable ["pbw_mines_isArmed", false])}

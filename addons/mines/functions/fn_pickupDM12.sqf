@@ -23,8 +23,10 @@ _player playAction "putdown";
 
 [{((animationState (_this select 1)) select [25,7]) isEqualTo "putdown"}, {
     params ["_dm12", "_player"];
-    
-    deleteVehicle _dm12;
-    [_player, "PBW_DM12"] call ace_common_fnc_addToInventory;
-}, _this] call CBA_fnc_waitUntilAndExecute;
 
+    if (isNull _dm12) exitWith {};
+
+    private _magClass = _dm12 getVariable ["pbw_mines_magClass", "PBW_DM12"];
+    deleteVehicle _dm12;
+    [_player, _magClass] call ace_common_fnc_addToInventory;
+}, _this] call CBA_fnc_waitUntilAndExecute;

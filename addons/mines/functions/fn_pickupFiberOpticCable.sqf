@@ -18,8 +18,7 @@
 
 params ["_dm12"];
 
-if !(_dm12 getVariable ["pbw_mines_isTriggerSet", false]) exitWith {};
+if ((_dm12 getVariable ["pbw_mines_fiberOpticCableEndPos", []]) isEqualTo []) exitWith {};
 
-_dm12 setVariable ["pbw_mines_isTriggerSet", false, true];
 _dm12 setVariable ["pbw_mines_fiberOpticCableEndPos", nil, true];
 _dm12 setVariable ["pbw_mines_magClass", nil, true];

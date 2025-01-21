@@ -1,5 +1,3 @@
-class CBA_Extended_EventHandlers_base;
-
 class CfgVehicles {
     class LandVehicle;
     class StaticWeapon: LandVehicle {
@@ -104,10 +102,6 @@ class CfgVehicles {
                 animPeriod = 0;
                 initPhase = 0;
             };
-        };
-
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
 
         class Turrets: Turrets {

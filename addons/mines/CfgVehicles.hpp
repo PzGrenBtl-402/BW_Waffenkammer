@@ -37,11 +37,21 @@ class CfgVehicles {
         accuracy = 0.12;
         cost = 10000;
 
+        armor = 400;
+
+        // ACE
+        ace_dragging_canCarry = 1;
+
         ace_dragging_canDrag = 1;
         ace_dragging_dragPosition[] = {0, 1, 0};
         ace_dragging_dragDirection = 0;
 
-        armor = 400;
+        ace_cargo_canLoad = 0;
+        ace_cargo_noRename = 1;
+
+        class ace_csw {
+            enabled = 0;
+        };
 
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {

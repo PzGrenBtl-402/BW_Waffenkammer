@@ -4,13 +4,13 @@
 
 <p align="center">
     <a href="https://github.com/PzGrenBtl-402/BW_Waffenkammer/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.0.2-blue.svg?style=flat-square" alt="BW Waffenkammer Version">
+        <img src="https://img.shields.io/github/v/release/PzGrenBtl-402/BW_Waffenkammer?label=Version&style=flat-square" alt="BW Waffenkammer Version">
     </a>
     <a href="https://github.com/PzGrenBtl-402/BW_Waffenkammer/releases/latest">
-        <img src="https://img.shields.io/github/downloads/PzGrenBtl-402/BW_Waffenkammer/total.svg?style=flat-square&label=Downloads" alt="BW Waffenkammer Downloads">
+        <img src="https://img.shields.io/github/downloads/PzGrenBtl-402/BW_Waffenkammer/total.svg?label=Downloads&logo=Github&style=flat-square" alt="BW Waffenkammer Downloads">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2693900325">
-        <img src="https://img.shields.io/badge/Steam-Workshop-green.svg?style=flat-square" alt="Steam Workshop">
+        <img src="https://img.shields.io/badge/Steam-Workshop-green.svg?logo=Steam&style=flat-square" alt="Steam Workshop">
     </a>
     <a href="https://github.com/PzGrenBtl-402/BW_Waffenkammer/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-APL--ND-red.svg?style=flat-square" alt="APL-ND License">

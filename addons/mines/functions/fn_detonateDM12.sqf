@@ -21,7 +21,9 @@ if (!isServer) exitWith {
     ["pbw_mines_detonateDM12", _this] call CBA_fnc_serverEvent;
 };
 
-params ["_dm12", "_magClass"];
+params [["_dm12", objNull, [objNull]], ["_magClass", "", [""]]];
+
+if (isNull _dm12 || {_magClass isEqualTo ""}) exitWith {};
 
 private _warheadBeginRelPos = _dm12 selectionPosition ["warhead_begin", "Memory"];
 private _warheadBeginPosWorld = _dm12 modelToWorldWorld _warheadBeginRelPos;

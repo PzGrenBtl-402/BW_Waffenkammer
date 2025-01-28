@@ -18,7 +18,7 @@
 
 params ["_dm12"];
 
-(alive _dm12) && 
-{count (crew _dm12) isEqualTo 0} && 
-{_dm12 getVariable ["pbw_mines_isTriggerSet", false]} &&
+(alive _dm12) &&
+{(crew _dm12) isEqualTo []} &&
+{(_dm12 getVariable ["pbw_mines_fiberOpticCableEndPos", []]) isNotEqualTo []} &&
 {!(_dm12 getVariable ["pbw_mines_isArmed", false])}

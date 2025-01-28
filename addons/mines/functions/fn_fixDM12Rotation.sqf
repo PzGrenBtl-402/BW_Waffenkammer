@@ -24,7 +24,7 @@ if (!local _dm12) exitWith {};
 // Stupid but better than copying the whole placing system
 [{(_this select 0) getVariable ["ace_explosives_Direction", -1] isNotEqualTo -1}, {
     params ["_dm12"];
-    
+
     private _dir = _dm12 getVariable ["ace_explosives_Direction", 0];
     _dm12 setDir _dir;
     _dm12 setVariable ["ace_explosives_Direction", _dir, true];

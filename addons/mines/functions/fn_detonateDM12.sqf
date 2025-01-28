@@ -17,24 +17,30 @@
  *
  */
 
-params ["_dm12", "_magClass"];
+if (!isServer) exitWith {
+    ["pbw_mines_detonateDM12", _this] call CBA_fnc_serverEvent;
+};
+
+params [["_dm12", objNull, [objNull]], ["_magClass", "", [""]]];
+
+if (isNull _dm12 || {_magClass isEqualTo ""}) exitWith {};
 
 private _warheadBeginRelPos = _dm12 selectionPosition ["warhead_begin", "Memory"];
-private _warheadBeginPosASL = _dm12 modelToWorldVisualWorld _warheadBeginRelPos;
+private _warheadBeginPosWorld = _dm12 modelToWorldWorld _warheadBeginRelPos;
 
 private _dm12Config = configFile >> "CfgMagazines" >> _magClass;
 private _rocketStarterClass = getText (_dm12Config >> "ammo");
 private _rocketStarter = _rocketStarterClass createVehicle [0, 0, 0];
-["ace_common_hideObjectGlobal", [_rocketStarter, true]] call CBA_fnc_serverEvent;
+_rocketStarter hideObjectGlobal true;
 
-private _dir0 = getDirVisual _dm12;
+private _dir0 = getDir _dm12;
 private _dir = _dir0 - deg (_dm12 animationSourcePhase "mainTurret");
 private _pitch0 = (_dm12 call BIS_fnc_getPitchBank) select 0;
 private _pitch = _pitch0 + deg (_dm12 animationSourcePhase "mainGun");
 
 deleteVehicle _dm12;
 
-_rocketStarter setPosASL _warheadBeginPosASL;
+_rocketStarter setPosWorld _warheadBeginPosWorld;
 _rocketStarter setDir _dir;
 [_rocketStarter, _pitch, 0] call BIS_fnc_setPitchBank;
 

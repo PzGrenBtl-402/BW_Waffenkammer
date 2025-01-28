@@ -20,4 +20,4 @@ params ["_dm12"];
 
 (alive _dm12) &&
 {!(_dm12 getVariable ["pbw_mines_isArmed", false])} &&
-{_dm12 getVariable ["pbw_mines_isTriggerSet", false]}
+{(_dm12 getVariable ["pbw_mines_fiberOpticCableEndPos", []]) isNotEqualTo []}

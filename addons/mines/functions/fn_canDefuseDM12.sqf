@@ -18,5 +18,5 @@
 
 params ["_dm12"];
 
-(alive _dm12) && 
+(alive _dm12) &&
 {_dm12 getVariable ["pbw_mines_isArmed", false]}

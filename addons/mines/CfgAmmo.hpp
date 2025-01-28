@@ -16,8 +16,8 @@ class CfgAmmo {
         submunitionParentSpeedCoef = 0;
         triggerOnImpact = 1;
         deleteParentWhenTriggered = 0;
-        
-        model = "\A3\Weapons_F_Tank\Launchers\MRAWS\rocket_MRAWS_HEAT_F";
+
+        model = "\A3\Weapons_F_Tank\Launchers\MRAWS\rocket_MRAWS_HEAT_F.p3d";
         hit = 2;
         indirectHit = 15;
         indirectHitRange = 4;
@@ -41,11 +41,11 @@ class CfgAmmo {
         timeToLive = 6;
         maneuvrability = 0;
         allowAgainstInfantry = 0;
-        soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.5118864,1,1800};
-        soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.5118864,1,1800};
-        soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.5118864,1,1800};
+        soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01.wss",2.5118864,1,1800};
+        soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02.wss",2.5118864,1,1800};
+        soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03.wss",2.5118864,1,1800};
         multiSoundHit[] = {"soundHit1",0.34,"soundHit2",0.33,"soundHit3",0.33};
-        soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32",0.31622776,1.5,900};
+        soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32.wss",0.31622776,1.5,900};
 
         class CamShakeExplode {
             power = "(55*0.2)";
@@ -74,7 +74,7 @@ class CfgAmmo {
 
         SoundSetExplosion[] = {"RocketsLight_Exp_SoundSet","RocketsLight_Tail_SoundSet","Explosion_Debris_SoundSet"};
     };
-    
+
     class SLAMDirectionalMine_Wire_Ammo;
     class PBW_DM12_Ammo: SLAMDirectionalMine_Wire_Ammo {
         explosionEffects = "ATMineExplosion";

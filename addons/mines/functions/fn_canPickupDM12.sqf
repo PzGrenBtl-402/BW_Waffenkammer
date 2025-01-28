@@ -15,10 +15,10 @@
  *      [cursorObject] call pbw_mines_fnc_canPickupDM12
  *
  */
- 
+
 params ["_dm12"];
 
 (alive _dm12) &&
-{count (crew _dm12) isEqualTo 0} && 
+{(crew _dm12) isEqualTo []} &&
 {!(_dm12 getVariable ["pbw_mines_isArmed", false])} &&
 {!(_dm12 getVariable ["pbw_mines_blockSetTrigger", false])}
